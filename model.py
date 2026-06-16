@@ -14,8 +14,19 @@ def prod(shape):
         result *= i
     return result
 
-# Step 2 - argsort (not yet solved)
-# TODO: implement
+# Step 2 - argsort
+def argsort(values):
+    # TODO: Return the indices that would sort values in ascending order.
+    paird_values = []
+    for idx, val in enumerate(values):
+        paird_values.append((val, idx))
+
+    sorted_pairs = sorted(paird_values)
+    result = []
+    for val , idx in sorted_pairs:
+        result.append(idx)
+
+    return result
 
 # Step 3 - make_op_enums (not yet solved)
 # TODO: implement
